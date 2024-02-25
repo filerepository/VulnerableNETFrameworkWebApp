@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE order [
+	<!ENTITY myEntity "lol">
+]>
+<Products>
+	<Product>
+		<Name>Product Three</Name>
+		<Description>&myEntity;</Description>
+		<ProductId>3000</ProductId>
+	</Product>
+		<Product>
+		<Name>Product Four</Name>
+		<Description>Description for Product Four</Description>
+		<ProductId>4000</ProductId>
+	</Product>
+</Products>

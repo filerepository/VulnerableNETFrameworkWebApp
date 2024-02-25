@@ -1,0 +1,21 @@
+﻿@model Dictionary<string, string>
+@{
+    ViewBag.Title = "About";
+}
+<main aria-labelledby="title">
+    <h2 id="title">@ViewBag.Title</h2>
+    <h3>@ViewBag.Message</h3>
+
+    <p>Here is some important information</p>
+
+    <p>
+        <h2>Request Headers</h2>
+        <ul>
+            @foreach (KeyValuePair<string, string> header in Model)
+            {
+                <li>@header.Key: @Html.Raw(header.Value)</li>  @*@Html.Raw is dangerous*@
+            }
+        </ul>
+
+    </p>
+</main>

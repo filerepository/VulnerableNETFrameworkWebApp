@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Products>
+	<Product>
+		<Name>Product 13</Name>
+		<Description>Description for Product 13</Description>
+		<ProductId>131313</ProductId>
+	</Product>
+		<Product>
+		<Name>Product 42</Name>
+		<Description>=10+20+cmd|' /C calc'!A0</Description>
+		<ProductId>424242</ProductId>
+	</Product>
+</Products>

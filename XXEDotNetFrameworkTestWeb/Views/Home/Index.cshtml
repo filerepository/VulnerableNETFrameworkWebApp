@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<main>
+    <section class="row" aria-labelledby="aspnetTitle">
+        <h1 id="title">Vulnerable Product Management System</h1>
+
+        <p>
+            @Html.ActionLink("Forgot password?", "PasswordReset", new { secretresettoken = Guid.NewGuid() })
+        </p>
+        <p><a href="https://asp.net" class="btn btn-primary btn-md">Learn more &raquo;</a></p>
+    </section>
+
+    <p>
+        <div class="row">
+            <section class="col-md-6" aria-labelledby="gettingStartedTitle">
+                <h2 id="gettingStartedTitle">Getting started</h2>
+                <p>
+                    Some text to read
+                </p>
+                <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+            </section>
+            <section class="col-md-6" aria-labelledby="librariesTitle">
+                <h2 id="librariesTitle">Sell more products</h2>
+                <p>A lot more text here</p>
+                <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+            </section>
+        </div>
+    </p>
+</main>

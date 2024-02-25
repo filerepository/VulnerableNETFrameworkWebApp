@@ -1,0 +1,16 @@
+﻿@model List<string>
+
+<h2>Product List</h2>
+
+<table class="table">
+    <tr>
+        <th>Filecontent</th>
+    </tr>
+
+    @foreach (string filecontent in Model)
+    {
+        <tr>
+            <td>@filecontent</td>
+        </tr>
+    }
+</table>

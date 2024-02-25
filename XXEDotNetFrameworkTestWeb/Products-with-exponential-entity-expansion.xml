@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE product [
+ <!ENTITY lol "lol">
+ <!ELEMENT lolz (#PCDATA)>
+ <!ENTITY lol1 "&lol;&lol;&lol;&lol;&lol;&lol;&lol;&lol;&lol;&lol;">
+ <!ENTITY lol2 "&lol1;&lol1;&lol1;&lol1;&lol1;&lol1;&lol1;&lol1;&lol1;&lol1;">
+]>
+<Products>
+	<Product>
+		<Name>Product Five</Name>
+		<Description>&lol2;</Description>
+		<ProductId>5000</ProductId>
+	</Product>
+		<Product>
+		<Name>Product Six</Name>
+		<Description>Description for Product Six</Description>
+		<ProductId>6000</ProductId>
+	</Product>
+</Products>

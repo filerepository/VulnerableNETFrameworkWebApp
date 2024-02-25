@@ -1,0 +1,40 @@
+﻿@model List<XXEDotNetFrameworkTestWeb.Models.ProductModel>
+
+<h2>Product List</h2>
+
+<table class="table">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Comments</th>
+
+        <th>Action</th>
+    </tr>
+
+    @foreach (XXEDotNetFrameworkTestWeb.Models.ProductModel product in Model)
+    {
+        <tr>
+            <td>@product.Id</td>
+            <td>@product.Name</td>
+            <td>@Html.Raw(@product.Description)</td>  @*@Html.Raw is dangerous*@
+            <td>@Html.Raw(@product.ProductComment)</td>  @*@Html.Raw is dangerous*@
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = product.Id })
+            </td>
+        </tr>
+    }
+</table>
+
+<p>
+    @Html.ActionLink("Create New Product", "Create")
+</p>
+<p>
+    @Html.ActionLink("Upload product file", "FileUpload", "FileUpload");
+</p>
+<p>
+    @Html.ActionLink("Download products in Excel file", "ExportProductsToExcel");
+</p>
+<p>
+
+</p>
